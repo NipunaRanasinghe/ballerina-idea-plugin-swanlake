@@ -1,44 +1,54 @@
-# ballerina-plugin-swanlake
+# Simple Language Sample [![JetBrains IntelliJ Platform SDK Docs](https://jb.gg/badges/docs.svg)][docs]
+*Reference: [Custom Language Support Tutorial in IntelliJ SDK Docs][docs:custom_language_support_tutorial]*
 
-![Build](https://github.com/NipunaRanasinghe/ballerina-plugin-swanlake/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+## Quickstart
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Get familiar with the [template documentation][template].
-- [ ] Adjust the [pluginGroup](./gradle.properties), [plugin ID](./src/main/resources/META-INF/plugin.xml) and [sources package](./src/main/kotlin).
-- [ ] Adjust the plugin description in `README` (see [Tips][docs:plugin-description])
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html?from=IJPluginTemplate).
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [ ] Set the `PLUGIN_ID` in the above README badges.
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+Defines a new language, _Simple language_ with support for syntax highlighting, annotations, code completion, and other features.
 
-<!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+### Extension Points
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+| Name                                          | Implementation                                                                          | Extension Point Class               |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------|-------------------------------------|
+| `com.intellij.fileType`                       | [SimpleFileType][file:SimpleFileType]                                                   | `LanguageFileType`                  |
+| `com.intellij.lang.parserDefinition`          | [SimpleParserDefinition][file:SimpleParserDefinition]                                   | `ParserDefinition`                  |
+| `com.intellij.lang.syntaxHighlighterFactory`  | [SimpleSyntaxHighlighterFactory][file:SimpleSyntaxHighlighterFactory]                   | `SyntaxHighlighterFactory`          |
+| `com.intellij.colorSettingsPage`              | [SimpleColorSettingsPage][file:SimpleColorSettingsPage]                                 | `ColorSettingsPage`                 |
+| `com.intellij.annotator`                      | [SimpleAnnotator][file:SimpleAnnotator]                                                 | `Annotator`                         |
+| `com.intellij.codeInsight.lineMarkerProvider` | [SimpleLineMarkerProvider][file:SimpleLineMarkerProvider]                               | `RelatedItemLineMarkerProvider`     |
+| `com.intellij.completion.contributor`         | [SimpleCompletionContributor][file:SimpleCompletionContributor]                         | `CompletionContributor`             |
+| `com.intellij.psi.referenceContributor`       | [SimpleReferenceContributor][file:SimpleReferenceContributor]                           | `PsiReferenceContributor`           |
+| `com.intellij.lang.refactoringSupport`        | [SimpleRefactoringSupportProvider][file:SimpleRefactoringSupportProvider]               | `RefactoringSupportProvider`        |
+| `com.intellij.lang.findUsagesProvider`        | [SimpleFindUsagesProvider][file:SimpleFindUsagesProvider]                               | `FindUsagesProvider`                |
+| `com.intellij.lang.foldingBuilder`            | [SimpleFoldingBuilder][file:SimpleFoldingBuilder]                                       | `FoldingBuilderEx`                  |
+| `com.intellij.gotoSymbolContributor`          | [SimpleChooseByNameContributor][file:SimpleChooseByNameContributor]                     | `ChooseByNameContributor`           |
+| `com.intellij.lang.psiStructureViewFactory`   | [SimpleStructureViewFactory][file:SimpleStructureViewFactory]                           | `PsiStructureViewFactory`           |
+| `com.intellij.lang.formatter`                 | [SimpleFormattingModelBuilder][file:SimpleFormattingModelBuilder]                       | `FormattingModelBuilder`            |
+| `com.intellij.codeStyleSettingsProvider`      | [SimpleCodeStyleSettingsProvider][file:SimpleCodeStyleSettingsProvider]                 | `CodeStyleSettingsProvider`         |
+| `com.intellij.langCodeStyleSettingsProvider`  | [SimpleLanguageCodeStyleSettingsProvider][file:SimpleLanguageCodeStyleSettingsProvider] | `LanguageCodeStyleSettingsProvider` |
+| `com.intellij.lang.commenter`                 | [SimpleCommenter][file:SimpleCommenter]                                                 | `Commenter`                         |
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
-<!-- Plugin description end -->
-
-## Installation
-
-- Using the IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "ballerina-plugin-swanlake"</kbd> >
-  <kbd>Install</kbd>
-  
-- Manually:
-
-  Download the [latest release](https://github.com/NipunaRanasinghe/ballerina-plugin-swanlake/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+*Reference: [Plugin Extension Points in IntelliJ SDK Docs][docs:ep]*
 
 
----
-Plugin based on the [IntelliJ Platform Plugin Template][template].
+[docs]: https://plugins.jetbrains.com/docs/intellij/
+[docs:custom_language_support_tutorial]: https://plugins.jetbrains.com/docs/intellij/custom-language-support-tutorial.html
+[docs:ep]: https://plugins.jetbrains.com/docs/intellij/plugin-extensions.html
 
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
-[docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
+[file:SimpleFileType]: ./src/main/java/org/intellij/sdk/language/SimpleFileType.java
+[file:SimpleParserDefinition]: ./src/main/java/org/intellij/sdk/language/SimpleParserDefinition.java
+[file:SimpleSyntaxHighlighterFactory]: ./src/main/java/org/intellij/sdk/language/SimpleSyntaxHighlighterFactory.java
+[file:SimpleColorSettingsPage]: ./src/main/java/org/intellij/sdk/language/SimpleColorSettingsPage.java
+[file:SimpleAnnotator]: ./src/main/java/org/intellij/sdk/language/SimpleAnnotator.java
+[file:SimpleLineMarkerProvider]: ./src/main/java/org/intellij/sdk/language/SimpleLineMarkerProvider.java
+[file:SimpleCompletionContributor]: ./src/main/java/org/intellij/sdk/language/SimpleCompletionContributor.java
+[file:SimpleReferenceContributor]: ./src/main/java/org/intellij/sdk/language/SimpleReferenceContributor.java
+[file:SimpleRefactoringSupportProvider]: ./src/main/java/org/intellij/sdk/language/SimpleRefactoringSupportProvider.java
+[file:SimpleFindUsagesProvider]: ./src/main/java/org/intellij/sdk/language/SimpleFindUsagesProvider.java
+[file:SimpleFoldingBuilder]: ./src/main/java/org/intellij/sdk/language/SimpleFoldingBuilder.java
+[file:SimpleChooseByNameContributor]: ./src/main/java/org/intellij/sdk/language/SimpleChooseByNameContributor.java
+[file:SimpleStructureViewFactory]: ./src/main/java/org/intellij/sdk/language/SimpleStructureViewFactory.java
+[file:SimpleFormattingModelBuilder]: ./src/main/java/org/intellij/sdk/language/SimpleFormattingModelBuilder.java
+[file:SimpleCodeStyleSettingsProvider]: ./src/main/java/org/intellij/sdk/language/SimpleCodeStyleSettingsProvider.java
+[file:SimpleLanguageCodeStyleSettingsProvider]: ./src/main/java/org/intellij/sdk/language/SimpleLanguageCodeStyleSettingsProvider.java
+[file:SimpleCommenter]: ./src/main/java/org/intellij/sdk/language/SimpleCommenter.java
+

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1dc0bb8-f419-476b-b028-c49d7b526a76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.run/Run IDE with Plugin.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/SimpleLexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/parser/SimpleParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/psi/SimpleProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/psi/SimpleTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/psi/SimpleVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/gen/org/intellij/sdk/language/psi/impl/SimplePropertyImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/Simple.bnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/Simple.flex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleAnnotator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleChooseByNameContributor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleCodeStyleSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleCodeStyleSettingsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleColorSettingsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleCommenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleCompletionContributor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleCreatePropertyQuickFix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleDocumentationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleFileType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleFindUsagesProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleFoldingBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleFormattingModelBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleIcons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleLanguage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleLanguageCodeStyleSettingsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleLexerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleLineMarkerProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleParserDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimplePropertyIconProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleRefactoringSupportProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleReferenceContributor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleSpellcheckingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleStructureAwareNavbar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleStructureViewElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleStructureViewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleStructureViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleSyntaxHighlighter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleSyntaxHighlighterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/SimpleUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/SimpleElementFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/SimpleElementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/SimpleFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/SimpleNamedElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/SimpleTokenSets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/SimpleTokenType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/impl/SimpleNamedElementImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/intellij/sdk/language/psi/impl/SimplePsiImplUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/jar-gray.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/intellij/sdk/language/SimpleCodeInsightTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/intellij/sdk/language/SimpleParsingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/AnnotatorTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/CompleteTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/DefaultTestData.simple" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/DocumentationTest.html.expected" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/DocumentationTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/DocumentationTestData.simple" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/FindUsagesTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/FindUsagesTestData.simple" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/FoldingTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/FormatterTestData.simple" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/ParsingTestData.simple" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/ParsingTestData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/ReferenceTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/RenameTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/RenameTestData.simple" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testData/RenameTestDataAfter.simple" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/run-ui-tests.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Run IDE for UI Tests.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Run Plugin.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Run Qodana.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Run Tests.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Run Verifications.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qodana.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/nipunaranasinghe/ballerinapluginswanlake/MyBundle.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/nipunaranasinghe/ballerinapluginswanlake/listeners/MyApplicationActivationListener.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/nipunaranasinghe/ballerinapluginswanlake/services/MyProjectService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/nipunaranasinghe/ballerinapluginswanlake/toolWindow/MyToolWindowFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages/MyBundle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/nipunaranasinghe/ballerinapluginswanlake/MyPluginTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testData/rename/foo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testData/rename/foo_after.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2WTYUGJd3qEVl5Mo4qB6DSyunJK" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nino/Desktop/repos/ballerina-plugin-swanlake&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1dc0bb8-f419-476b-b028-c49d7b526a76" name="Changes" comment="" />
+      <created>1696758050960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696758050960</updated>
+    </task>
+    <servers />
+  </component>
+</project>
