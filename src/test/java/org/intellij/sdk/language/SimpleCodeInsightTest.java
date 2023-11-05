@@ -72,7 +72,7 @@ public class SimpleCodeInsightTest extends LightJavaCodeInsightFixtureTestCase {
   }
 
   public void testCommenter() {
-    myFixture.configureByText(SimpleFileType.INSTANCE, "<caret>website = https://en.wikipedia.org/");
+    myFixture.configureByText(BalFileType.INSTANCE, "<caret>website = https://en.wikipedia.org/");
     CommentByLineCommentAction commentAction = new CommentByLineCommentAction();
     commentAction.actionPerformedImpl(getProject(), myFixture.getEditor());
     myFixture.checkResult("#website = https://en.wikipedia.org/");

@@ -4,12 +4,12 @@ package org.intellij.sdk.language;
 
 import com.intellij.lang.Language;
 
-public class SimpleLanguage extends Language {
+public class BalLanguage extends Language {
 
-  public static final SimpleLanguage INSTANCE = new SimpleLanguage();
+  public static final BalLanguage INSTANCE = new BalLanguage();
 
-  private SimpleLanguage() {
-    super("Ballerina");
+  private BalLanguage() {
+    super("Ballerina Swan Lake");
   }
 
 }

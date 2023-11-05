@@ -20,7 +20,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class SimpleParserDefinition implements ParserDefinition {
 
-  public static final IFileElementType FILE = new IFileElementType(SimpleLanguage.INSTANCE);
+  public static final IFileElementType FILE = new IFileElementType(BalLanguage.INSTANCE);
 
   @NotNull
   @Override

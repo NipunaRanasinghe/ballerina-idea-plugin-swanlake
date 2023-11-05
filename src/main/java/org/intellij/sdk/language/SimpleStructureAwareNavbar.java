@@ -17,7 +17,7 @@ public class SimpleStructureAwareNavbar extends StructureAwareNavBarModelExtensi
   @NotNull
   @Override
   protected Language getLanguage() {
-    return SimpleLanguage.INSTANCE;
+    return BalLanguage.INSTANCE;
   }
 
   @Override

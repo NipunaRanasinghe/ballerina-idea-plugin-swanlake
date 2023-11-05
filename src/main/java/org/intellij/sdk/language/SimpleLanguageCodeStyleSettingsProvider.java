@@ -12,7 +12,7 @@ public class SimpleLanguageCodeStyleSettingsProvider extends LanguageCodeStyleSe
   @NotNull
   @Override
   public Language getLanguage() {
-    return SimpleLanguage.INSTANCE;
+    return BalLanguage.INSTANCE;
   }
 
   @Override

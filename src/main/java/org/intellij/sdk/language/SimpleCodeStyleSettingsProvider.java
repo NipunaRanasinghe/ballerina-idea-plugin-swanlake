@@ -39,7 +39,7 @@ public class SimpleCodeStyleSettingsProvider extends CodeStyleSettingsProvider {
   private static class SimpleCodeStyleMainPanel extends TabbedLanguageCodeStylePanel {
 
     public SimpleCodeStyleMainPanel(CodeStyleSettings currentSettings, CodeStyleSettings settings) {
-      super(SimpleLanguage.INSTANCE, currentSettings, settings);
+      super(BalLanguage.INSTANCE, currentSettings, settings);
     }
 
   }

@@ -8,30 +8,30 @@ import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
-public class SimpleFileType extends LanguageFileType {
+public class BalFileType extends LanguageFileType {
 
-  public static final SimpleFileType INSTANCE = new SimpleFileType();
+  public static final BalFileType INSTANCE = new BalFileType();
 
-  private SimpleFileType() {
-    super(SimpleLanguage.INSTANCE);
+  private BalFileType() {
+    super(BalLanguage.INSTANCE);
   }
 
   @NotNull
   @Override
   public String getName() {
-    return "Simple File";
+    return "Ballerina File";
   }
 
   @NotNull
   @Override
   public String getDescription() {
-    return "Simple language file";
+    return "Ballerina language file";
   }
 
   @NotNull
   @Override
   public String getDefaultExtension() {
-    return "simple";
+    return "bal";
   }
 
   @Nullable
