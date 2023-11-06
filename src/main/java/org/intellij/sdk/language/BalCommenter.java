@@ -5,12 +5,12 @@ package org.intellij.sdk.language;
 import com.intellij.lang.Commenter;
 import org.jetbrains.annotations.Nullable;
 
-public class SimpleCommenter implements Commenter {
+public class BalCommenter implements Commenter {
 
   @Nullable
   @Override
   public String getLineCommentPrefix() {
-    return "#";
+    return "//";
   }
 
   @Nullable
